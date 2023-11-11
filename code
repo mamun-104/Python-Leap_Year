@@ -1,0 +1,17 @@
+#Leap year
+# Condition 1: YEAR must be divisible by 4
+# Condition 2: if Condition 1 is okay, YEAR must NOT be divisible by 100, Then LEAP YERA
+# Otherwise - if divisible by 100, then MUST be Divisible by 400 as well to beome a LEAP YEAR
+
+year = int(input("Enter a Year: "))
+
+if year % 4 == 0:
+  if year % 100 != 0:
+      print("Hurray! This is a Leap Year")
+  else:
+      if year % 400 ==0:
+        print("Hurray! This is a Leap Year")
+      else:
+        print("This is NOT a Leap Year")
+else:
+  print("This is NOT a Leap Year")
